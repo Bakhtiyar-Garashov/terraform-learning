@@ -11,6 +11,8 @@ IaC allows DevOps teams to use different tools and approaches to automatically c
  
 ><cite> -- [NexaStack](https://www.nexastack.com/blog/best-iac-tools)<cite>
 
+HashiCorp Terraform is the most popular and open-source tool for infrastructure automation. It helps in configuring, provisioning, and managing the infrastructure as code. With terraform, you can easily plan and create IaC across multiple infrastructure providers with the same workflow. It uses the declarative approach to define the required infrastructure as code. Terraform allows users to have a pre-execution check to validate whether the configurations meet the result expectations or not, before updating or provisioning the infrastructure. It enables users to have their desired infrastructure across multiple cloud providers through a single and consistent CLI workflow. You can easily provision different environments using the same configuration and manage the full lifecycle of your desired infrastructure; thus reducing human errors and increasing automation in the infrastructure provisioning and management process
+
 
 This repo contains test scripts and tutorials used during my learning journey of Terraform. 
 
