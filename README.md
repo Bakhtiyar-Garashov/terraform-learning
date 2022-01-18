@@ -1,5 +1,7 @@
-# terraform-learning
-This repo contains test scripts used during my learning journey of Terraform
+# Terraform learning
+This repo contains test scripts used during my learning journey of Terraform. 
+
+Terraform is an open-source infrastructure as code tool that allows you to manage hundreds of cloud services to use a uniform CLI approach. Terraform uses declarative configuration files to codify cloud APIs.
 
 ## Sources that I am using
 ### Beginner
