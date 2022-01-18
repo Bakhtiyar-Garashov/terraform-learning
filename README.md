@@ -26,3 +26,7 @@ This repo contains test scripts and tutorials used during my learning journey of
 
 ### HashiCorp Terraform Associate exam preparation
 - [HashiCorp Terraform Associate Certification Course by FreeCodeCamp](https://youtu.be/V4waklkBC38)
+
+### TODO
+
+- [ ] Add table of contents
