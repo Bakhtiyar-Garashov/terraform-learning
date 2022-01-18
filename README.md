@@ -4,12 +4,12 @@ Before starting with Terraform it is worth to mention what is the logic behind t
 
 >"Infrastructure as Code (IaC) is the process of configuring and managing the infrastructure through a descriptive model. It is all about treating your infrastructure configuration and provisioning in the same way you treat your application source code. The configuration modules are typically stored in version control systems in very well-documented code formats which provides greater accuracy, reduces errors, and increases speed and consistency.
 
-IAC is one of the most important DevOps practices used in conjunction with continuous delivery. The benefits that lead many businesses to migrate to IAC are changeless infrastructure, an increase in the speed of delivery, scalability, cost savings, and risk mitigation.
+>IAC is one of the most important DevOps practices used in conjunction with continuous delivery. The benefits that lead many businesses to migrate to IAC are changeless infrastructure, an increase in the speed of delivery, scalability, cost savings, and risk mitigation.
 IaC allows DevOps teams to use different tools and approaches to automatically control and customize the required infrastructure, instead of manually configuring the servers and operating systems. With the increase in the number of production and delivery cycles, the use of Infrastructure as Code (IaC) tools has changed the way software engineers design, test, and release their applications.
 
-Automation tools that promote the IaC best practices are necessary to make the process of building and configuring the infrastructure more competitive and effective, reducing the costs and effort involved." 
+>Automation tools that promote the IaC best practices are necessary to make the process of building and configuring the infrastructure more competitive and effective, reducing the costs and effort involved." 
  
-> <cite>[NexaStack](https://www.nexastack.com/blog/best-iac-tools)<cite>
+><cite>[NexaStack](https://www.nexastack.com/blog/best-iac-tools)<cite>
 
 
 This repo contains test scripts and tutorials used during my learning journey of Terraform. 
