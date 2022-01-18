@@ -9,7 +9,7 @@ IaC allows DevOps teams to use different tools and approaches to automatically c
 
 >Automation tools that promote the IaC best practices are necessary to make the process of building and configuring the infrastructure more competitive and effective, reducing the costs and effort involved." 
  
-><cite>[NexaStack](https://www.nexastack.com/blog/best-iac-tools)<cite>
+><cite> -- [NexaStack](https://www.nexastack.com/blog/best-iac-tools)<cite>
 
 
 This repo contains test scripts and tutorials used during my learning journey of Terraform. 
