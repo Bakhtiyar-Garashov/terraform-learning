@@ -1,5 +1,9 @@
 # Terraform learning
 
+<p align="center">
+    <img src="./terraform_logo.svg" width="600">
+</p>
+
 This repo contains test scripts and tutorials used during my learning journey of Terraform. Learning path consists of folders which contain learning guide/document and test scripts for that particular day. I didn't give a fancy name ("xxx-days-of-terraform") to the repository as I am not sure at all how long it will take to learn the concepts. So, let's start with the [day 1](./Day_01/day_01.md)
 
 
