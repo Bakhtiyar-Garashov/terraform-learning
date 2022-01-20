@@ -24,6 +24,8 @@ HashiCorp Terraform is the most popular and open-source tool for infrastructure 
 
 Terraform is a vendor agnostic IaC tools means it can be easily used for provisioning resources in AWS, GCP or any other major cloud vendor. Within the configuration files, you can define the resources and their attributes. Terraform will automatically create the infrastructure based on the configuration. Either HashiCorp Configuration Language (HCL) or JSON is the appropriate format for defining the resources and their attributes. It is worth to mention that options are not limited to only above mentioned options in terms of syntax. 
 
+Please note that HCL or JSON is not the only format supported by Terraform. You can even use programming language of your choice including TypeScript, Python, and Go to define the resources and their attributes with the help of Cloud Development Kit for Terraform. For more info check out [CDKTF documentation](https://learn.hashicorp.com/collections/terraform/cdktf).
+
 Terraform uses push model for creating the resources means it will create the resources in the cloud when you push your local configuration changes. 
 
 Terraform consists of 4 core components:
@@ -58,5 +60,43 @@ Terraform consists of 4 core components:
     terraform -v
     ```
 
-    
+
     ![Terminal view](./terraform_verify.png "The result of the command")
+
+    Also you can similary use apt-get for Linux or chocolatey for Windows to install Terraform.
+
+
+### HashiCorp Configuration Language (HCL) syntax
+
+HashiCorp configuration language uses Bloc syntax to define the resources and their attributes. It is a declarative language that is easy to read and understand. It is also a human readable format. Each block starts with definition of block type, label and their attributes.
+
+```hcl
+block_type "label" "label_name" {
+    key = "value"
+}
+```
+It is also possible to define nested blocks (blocks within another block).
+```hcl
+block_type "label" "label_name" {
+    key = "value"
+    block_type "label" "label_name" {
+        key = "value"
+    }
+}
+```
+If you want to refer a property from another block, you can use the following syntax:
+resource_type.name_label.attribute_name
+
+```hcl
+resource "aws_instance" "web_server" {
+    name = "web-server"
+    ebs_volume {
+        size = 100
+    }
+}   
+```
+For the defined block above we can use the following syntax to refer the name attribute:
+```hcl
+aws_instance.web_server.name
+```
+
