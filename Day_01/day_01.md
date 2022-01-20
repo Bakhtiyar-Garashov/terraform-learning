@@ -1,4 +1,4 @@
-# Day 1 of Terraform Learning path
+# Day 1 - Introduction
 
 Before starting with Terraform it is worth to mention what is the logic behind the IaC (Infrastructure as Code). 
 
