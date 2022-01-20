@@ -19,6 +19,7 @@ IaC allows DevOps teams to use different tools and approaches to automatically c
 - Reusable components
 - Self-documented infrastructure architecture
 
+### Introduction to Terraform
 HashiCorp Terraform is the most popular and open-source tool for infrastructure automation. It helps in configuring, provisioning, and managing the infrastructure as code. With terraform, you can easily plan and create IaC across multiple infrastructure providers with the same workflow. It uses the declarative approach to define the required infrastructure as code. Terraform allows users to have a pre-execution check to validate whether the configurations meet the result expectations or not, before updating or provisioning the infrastructure. It enables users to have their desired infrastructure across multiple cloud providers through a single and consistent CLI workflow. You can easily provision different environments using the same configuration and manage the full lifecycle of your desired infrastructure; thus reducing human errors and increasing automation in the infrastructure provisioning and management process.
 
 Terraform is a vendor agnostic IaC tools means it can be easily used for provisioning resources in AWS, GCP or any other major cloud vendor. Within the configuration files, you can define the resources and their attributes. Terraform will automatically create the infrastructure based on the configuration. Either HashiCorp Configuration Language (HCL) or JSON is the appropriate format for defining the resources and their attributes. It is worth to mention that options are not limited to only above mentioned options in terms of syntax. 
@@ -30,3 +31,32 @@ Terraform consists of 4 core components:
 - **Configuration files** - a declarative format for defining the resources and their attributes.
 - **Terraform Provider** - a plugin that provides the functionality to create the infrastructure as code. Talks with the APIs of specific cloud providers.
 - **Terraform State** - a file that contains the state of the infrastructure as code. It is basically a mapping of the what is defined in config files and what is actually created in the cloud.
+
+### Installation of Terraform
+
+1. Download the Terraform executable from the [Terraform website](https://www.terraform.io/downloads.html)
+2. Install the Terraform executable on your local machine.
+3. Make sure it is available on your terminal (e.g. `which terraform`) (if not, add it to your PATH in Windows, or in your `.bashrc` file in Linux/Mac)
+
+#### Installation for Mac OSX via Homebrew package manager
+
+1. Update brew package manager via commands below:
+  ```bash 
+    brew update
+    brew upgrade
+  ```
+2. Install the HashiCorp tap, a repository of all our Homebrew packages.
+    ```bash 
+    brew tap hashicorp/tap
+    ```
+3. Install Terraform via the following command:
+    ```bash 
+    brew install hashicorp/tap/terraform
+    ```
+4. Verify that Terraform is installed by running the following command:
+    ```bash 
+    terraform -v
+    ```
+
+    
+    ![Terminal view](./terraform_verify.png "The result of the command")
