@@ -12,7 +12,7 @@ IaC allows DevOps teams to use different tools and approaches to automatically c
 ><cite> -- [NexaStack](https://www.nexastack.com/blog/best-iac-tools)<cite>
 
 
-## Advantages of Infrastructure as Code
+### Advantages of Infrastructure as Code
 - Automated deployment
 - Repeatable process
 - Consistent environment (such as, production, staging, dev etc.)
@@ -20,3 +20,13 @@ IaC allows DevOps teams to use different tools and approaches to automatically c
 - Self-documented infrastructure architecture
 
 HashiCorp Terraform is the most popular and open-source tool for infrastructure automation. It helps in configuring, provisioning, and managing the infrastructure as code. With terraform, you can easily plan and create IaC across multiple infrastructure providers with the same workflow. It uses the declarative approach to define the required infrastructure as code. Terraform allows users to have a pre-execution check to validate whether the configurations meet the result expectations or not, before updating or provisioning the infrastructure. It enables users to have their desired infrastructure across multiple cloud providers through a single and consistent CLI workflow. You can easily provision different environments using the same configuration and manage the full lifecycle of your desired infrastructure; thus reducing human errors and increasing automation in the infrastructure provisioning and management process.
+
+Terraform is a vendor agnostic IaC tools means it can be easily used for provisioning resources in AWS, GCP or any other major cloud vendor. Within the configuration files, you can define the resources and their attributes. Terraform will automatically create the infrastructure based on the configuration. Either HashiCorp Configuration Language (HCL) or JSON is the appropriate format for defining the resources and their attributes. It is worth to mention that options are not limited to only above mentioned options in terms of syntax. 
+
+Terraform uses push model for creating the resources means it will create the resources in the cloud when you push your local configuration changes. 
+
+Terraform consists of 4 core components:
+- **Terraform CLI** - a single binary that can be used to create, plan, and apply the infrastructure as code. Single binary compiled from Go.
+- **Configuration files** - a declarative format for defining the resources and their attributes.
+- **Terraform Provider** - a plugin that provides the functionality to create the infrastructure as code. Talks with the APIs of specific cloud providers.
+- **Terraform State** - a file that contains the state of the infrastructure as code. It is basically a mapping of the what is defined in config files and what is actually created in the cloud.
